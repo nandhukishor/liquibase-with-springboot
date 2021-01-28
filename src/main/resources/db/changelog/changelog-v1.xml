@@ -31,7 +31,12 @@
             <column name="number-plate" type="varchar(255)"/>
         </createTable>
     </changeSet>
-
+<changeSet id="5" author="kishor">
+        <addColumn schemaName="liquibase"
+                   tableName="car">
+            <column name="level" type="varchar(255)" />
+        </addColumn>
+    </changeSet>
 
 
 
