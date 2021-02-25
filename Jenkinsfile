@@ -15,7 +15,7 @@ pipeline {
 
             steps {
                 withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn liquibase:history'
+                    sh 'mvn liquibase:generateChangeLog'
                 }
             }
         }
