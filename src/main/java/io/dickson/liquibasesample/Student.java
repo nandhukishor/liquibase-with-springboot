@@ -18,12 +18,11 @@ public class Student {
     @Column(name = "school")
     private String description;
 
-    @Column(name = "address")
-    private String address;
-
-    @Column(name = "level")
-    private String level;
-
+	/*
+	 * @Column(name = "address") private String address;
+	 * 
+	 * @Column(name = "level") private String level;
+	 */
     public Student() {
         // For persistence
     }
@@ -53,19 +52,13 @@ public class Student {
         this.description = description;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getLevel() {
-        return level;
-    }
-
-    public void setLevel(String level) {
-        this.level = level;
-    }
+	/*
+	 * public String getAddress() { return address; }
+	 * 
+	 * public void setAddress(String address) { this.address = address; }
+	 * 
+	 * public String getLevel() { return level; }
+	 * 
+	 * public void setLevel(String level) { this.level = level; }
+	 */
 }

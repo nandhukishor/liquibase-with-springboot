@@ -5,25 +5,24 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <changeSet id="1" author="Dickson the developer">
+    <!-- <changeSet id="1" author="Kishor">
         <addColumn schemaName="liquibase"
                    tableName="students">
-            <column name="address" type="varchar(255)" />
+            <column name="marks" type="varchar(255)" />
         </addColumn>
     </changeSet>
-    <changeSet id="2" author="Dickson the developer">
+     <changeSet id="2" author="Kishor">
         <addColumn schemaName="liquibase"
                    tableName="students">
-            <column name="level" type="varchar(255)" />
+            <column name="sports" type="varchar(255)" />
         </addColumn>
-    </changeSet>
-    <changeSet author="dickson-the-developer" id="6">
+    </changeSet> -->
+    <!-- <changeSet author="dickson-the-developer" id="6">
         <delete schemaName="liquibase"
                 tableName="students">
             <where>name='Matthew'</where>
         </delete>
     </changeSet>
-    <changeSet author="dickson-the-developer" id="8">
         <createTable
                 schemaName="liquibase"
                 tableName="car"
@@ -31,7 +30,18 @@
             <column name="number-plate" type="varchar(255)"/>
         </createTable>
     </changeSet>
-
+ <changeSet author="kishor" id="3">
+       <addColumn schemaName="liquibase"
+                   tableName="car">
+            <column name="name" type="varchar(255)" />
+        </addColumn>
+    </changeSet>
+    <changeSet author="kishor" id="8">
+       <addColumn schemaName="liquibase"
+                   tableName="car">
+            <column name="cartype" type="varchar(255)" />
+        </addColumn> -->
+    
 
 
 
